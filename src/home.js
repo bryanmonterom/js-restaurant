@@ -1,6 +1,9 @@
-export const container = ()=>{
+export const containerHome = ()=>{
+    let container = document.getElementsByClassName('container')[0];
+    container.innerHTML = '';
     let div = document.createElement('div');
-    div.classList.add('container-home')
+    div.classList.add('home')
+
 
     let card = document.createElement('div');
     card.classList.add('card')
@@ -24,7 +27,8 @@ export const container = ()=>{
     card.appendChild(image());
 
     div.appendChild(card);
-
+    
+    container.appendChild(card)
 
 
     return div;
@@ -35,32 +39,20 @@ const paragraphs = ()=>{
     return paragraph;
 }
 
+
+
+
 const paragraphs_second = ()=>{
     let paragraph = [{text:"Placer en cada bocado",class:"third-text"}];
     return paragraph;
 }
 
-const paragraphs_footer = ()=>{
-    let paragraph = [{text:"Developed by Bryan Montero",class:"footer-text"}];
-    return paragraph;
-}
+
 
 const image = ()=>{
     let img = document.createElement('img');
-    img.src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX9330771.jpg"
+    img.classList.add('chef')
+    img.src="https://media.gettyimages.com/photos/chef-with-delicious-pizza-picture-id154926593?s=612x612"
     return img;
 }
 
-
-export const footer = ()=>{
-    let div = document.createElement('div');
-    div.classList.add('footer')
-
-    paragraphs_footer().forEach(element => {
-        let p = document.createElement('p');
-        p.classList.add(element.class);
-        p.textContent= element.text;
-        div.appendChild(p);
-    });
-    return div;
-}
