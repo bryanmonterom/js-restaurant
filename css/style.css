@@ -3,9 +3,38 @@
     src: url('./Hugh-Whittle.ttf') format("truetype");
 }
 
+
+@font-face {
+    font-family: "Miraikato";
+    src: url('./Miraikato.otf') format("truetype");
+}
+
+
+@font-face {
+    font-family: "MontserratAlternates-Black.otf";
+    src: url('./MontserratAlternates-Black.otf') format("truetype");
+}
+
 .Logo{
     font-family: "Hugh-Whittle";
-    font-size: 240px;
+    font-size: 120px;
+    margin: 0;
+}
+
+.Minimizado{
+    font-family: "Hugh-Whittle";
+    font-size: 120px;
+    margin-bottom: 0;
+    color: goldenrod;
+    margin-top: -80px;
+}
+
+
+.secondary-text{
+    font-family: "Miraikato";
+    font-size: 45px;
+    color: rgb(239, 238, 235);
+    margin-bottom: 20px;
 }
 .navbar{
     color: white;
@@ -15,9 +44,12 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    opacity: 0.5;
+    opacity: 0.8;
     padding: 10px;
     height: 350;
+    border-bottom: 5px solid goldenrod;
+
+  
 
 }
 
@@ -27,6 +59,7 @@
     list-style-type: none;
     justify-content: space-between;
     gap: 25px;
+
 }
 
 .nav-item{
@@ -34,6 +67,8 @@
     border-radius: 2px;
     /* margin: 5px; */
     font-size: 20px;
+    border-bottom: 2px solid transparent;
+
     /* background-color: rgba(255, 255, 255, 0.627); */
 }
 
@@ -44,4 +79,85 @@
 
 body{
     background-color: beige;
+    display: flex;
+    justify-content: center;
+    background-image: url("https://images6.alphacoders.com/609/609345.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'MontserratAlternates-Black.otf';
+
+}
+
+.container-home{
+    opacity: 0.8;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    margin-top: 40px;
+    margin-bottom: 90px;
+
+
+
+}
+
+.card{
+    background-color: black;
+    width: 800px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+p{
+    color: white;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+hr{
+    border: 5px solid goldenrod;
+    border-radius: 5px;
+    width: 50%;
+  }
+
+  .third-text{
+    font-size: 25px;
+    color: rgb(239, 238, 235);
+     }
+
+img{
+    width:350px;
+    height: auto;
+    opacity: 1;
+}
+
+.footer{
+    border-top: 5px solid goldenrod;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 80px;
+    opacity: 0.8;
+
+}
+
+.footer-text{
+    font-size: 16px;
 }
