@@ -1,4 +1,7 @@
 import {navigationbar} from './navbar'
+import {container} from './home'
 
-console.log(navigationbar());
+
 document.getElementById('content').appendChild(navigationbar());
+console.log(container())
+document.getElementById('content').appendChild(container());

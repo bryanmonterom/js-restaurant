@@ -1,7 +1,3 @@
-export default function printMe() {
-  'I get called from print.js!';
-  }
-
   class NavbarItem{
     constructor(title, data){
         this.title = title;
@@ -14,7 +10,6 @@ export default function printMe() {
     const menu = new NavbarItem('Menu','1');
     const about = new NavbarItem('About','2');
     const Contact = new NavbarItem('Contact','3');
-
     let navitems = [];
 
     navitems.push(menu);
@@ -31,8 +26,6 @@ export default function printMe() {
     let div = document.createElement('div');
     div.textContent = "La Pizzeria"
     div.classList.add("Logo");
-
-
 
     let ul = document.createElement("ul");
     ul.classList.add('nav')
