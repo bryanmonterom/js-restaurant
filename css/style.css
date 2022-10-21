@@ -78,23 +78,31 @@
 }
 
 body{
-    background-color: beige;
     display: flex;
     justify-content: center;
-    background-image: url("https://images6.alphacoders.com/609/609345.jpg");
-    background-color: #cccccc;
-    background-repeat: no-repeat;
-    background-size: cover;
+ 
     align-items: flex-start;
     text-align: center;
     font-family: 'MontserratAlternates-Black.otf';
     margin: 0px;
     padding: 0px;
 
+ 
+
 }
+
+
+html { 
+    background: url("../../img/bg.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
 .container{
     opacity: 0.8;
+
     width: 100%;
     display: flex;
     justify-content: center;
@@ -114,7 +122,7 @@ body{
 
 .card{
     background-color: black;
-    width: 860px;
+    width: 900px;
     text-align: center;
     padding: 20px;
     animation: fadeIn 1s; 
@@ -195,6 +203,8 @@ hr{
 
 .dish-name{
     color: white;
+    font-weight: 900;
+    font-size: 30px;
 }
 
 .dish-ingredients{
@@ -223,3 +233,17 @@ height: auto;
     }
   }
 
+label{
+    color: white;
+    font-size: 25px;
+}
+
+
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
