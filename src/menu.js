@@ -1,3 +1,6 @@
+import {createElement} from './utilities'
+
+
 const imageHeaderFirst = () => {
     let img = document.createElement('img');
     img.classList.add('menu-banner');
