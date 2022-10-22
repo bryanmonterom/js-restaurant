@@ -80,7 +80,8 @@
 body{
     display: flex;
     justify-content: center;
- 
+    cursor: pointer;
+
     align-items: flex-start;
     text-align: center;
     font-family: 'MontserratAlternates-Black.otf';
@@ -195,6 +196,12 @@ hr{
     margin-top: auto;
 
 
+}
+
+.active{
+    border-bottom: 1px solid white;
+    font-weight: 900;
+    font-size: 25px;
 }
 
 .footer-text{
