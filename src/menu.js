@@ -6,7 +6,7 @@ export const containerMenu = () => {
     container.innerHTML = '';
     let div = createElement('div','container','') 
     let card = createElement('div','menu','')
-    card.appendChild(createImages('menu-banner','../img/header1.jpg'));
+    card.appendChild(createImages('menu-banner','../dist/img/header1.jpg'));
     let paragraph = paragraphs();
     let line = createElement('hr','','')
     let p1 = createElement('p',paragraph[0].class,paragraph[0].text);
@@ -26,7 +26,7 @@ export const containerMenu = () => {
     card.appendChild(gourmetdiv);
 
 
-    card.appendChild(createImages('menu-banner','../img/header2.jpg'));
+    card.appendChild(createImages('menu-banner','../dist/img/header2.jpg'));
 
 
     let line2 = createElement('hr','','')

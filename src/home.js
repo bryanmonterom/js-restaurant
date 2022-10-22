@@ -37,7 +37,7 @@ const paragraphs = () => {
 const image = () => {
     let img = document.createElement('img');
     img.classList.add('chef')
-    img.src = "../img/chef.jpg"
+    img.src = "../dist/img/chef.jpg"
     return img;
 }
 
