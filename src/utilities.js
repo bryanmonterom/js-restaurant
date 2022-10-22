@@ -7,3 +7,10 @@ export function createElement(element, className,text){
     console.log(elementtoCreate);
     return elementtoCreate;
 }
+
+export function createImages(className, src){
+    let img = document.createElement('img');
+    img.classList.add(className);
+    img.src = src
+    return img;
+}
