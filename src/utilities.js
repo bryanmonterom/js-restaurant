@@ -4,7 +4,6 @@ export function createElement(element, className,text){
     if(className != ''){
         elementtoCreate.classList.add(className)
     }
-    console.log(elementtoCreate);
     return elementtoCreate;
 }
 
@@ -13,4 +12,9 @@ export function createImages(className, src){
     img.classList.add(className);
     img.src = src
     return img;
+}
+
+export function setActive(e){
+    document.getElementsByClassName('active')[0].classList.toggle('active');
+     e.target.classList.toggle('active') ;
 }

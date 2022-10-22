@@ -37,6 +37,9 @@ export const navigationbar = () => {
 
   buildNavItems().forEach(element => {
     let navbarItem = createElement('li', 'nav-item', element.title);
+    if(element.title == "Home"){
+      navbarItem.classList.add('active');
+    }
     navbarItem.id = element.title;
     navbarItem.setAttribute("data-index", element.data);
     ul.appendChild(navbarItem)

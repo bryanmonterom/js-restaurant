@@ -22,6 +22,7 @@ export const containerHome = () => {
     card.appendChild(image());
     div.appendChild(card);
     container.appendChild(card)
+
     return div;
 }
 
